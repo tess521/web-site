@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>My Business</title>
+  </head>
+  
+  <body>
+    <header id="shocase">
+      <h1>Welcome to Sticky Situation</h1>
+    </header>
+    <div id="content" class="container">
+      In the mood for something new and improved to spice up your life. The you 
+      need a little help from the Sticky Situation Squad. With a bit of duct tape
+      and some imagenation you can have yourself a new and improved object.
+      We make so many things here. 
+    </div>
+  </body>
+   <nav> 
+      <a href="index.html"><a href="index.html">Home</a>
+      <a href="pages/page1.html">Look Book</a>
+      <a href="pages/page2.html">Contact Us</a>
+    </nav>
+  <body>
+    <div class="column-layout">
+    <div class="main-column">
+      <h2>Location</h2>
+      <p>2122 Carpet Street<br>
+      Crete, IL 60417</p>
+      <p><b>Phone:</b>414-521-2223</p>
+      <p><b>Email:</b>info@stickysituation.com</p>
+    </div>
+    <div class="sidebar-two">
+      <h3>Hours of Operation</h3>
+      <p><b>Mon-Fri:</b> 10am-5pm<br>
+      <b>Sat:</b> 12pm-5pm</p>
+    </div>
+  </div>
+  
+ <div id="map"></div>
+ 
+  <div class="call-outs-container">
+    <div class="call-out">
+      <h4>Feature 1</h4>
+      <p>When you come in for your first consitation you can get 50% off you first art piece.</p>
+    </div>
+
+    <div class="call-out">
+      <h4>Feature 2</h4>
+      <p>When you come in for your second secton get a free goodie bag.</p>
+    </div>
+  </div>
+  <script>
+      function initMap() {
+        var uluru = {lat: 41.4358773, lng: -87.634567};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAOOtQR05Kyvcr2DglEiFsrX1vssydRQ34&callback=initMap">
+    </script>
+  </body>
+</html>
