@@ -30,6 +30,11 @@ body {
   animation-fill-mode: forwards;
 }
 
+#map {
+        height: 400px;
+        width: 100%;
+       }
+
 @keyframes floatingdown {
   0% {top: -60px;}
   100% {top: 200px;}
@@ -112,6 +117,10 @@ a:active {
     box-sizing:border-box;
     margin-bottom:20px;
     width:30%;
+}
+
+#logo {
+  width: 100px;
 }
 
 .call-outs-container {
