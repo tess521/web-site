@@ -1,55 +1,74 @@
 <!DOCTYPE html>
 <html>
-  
+
   <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
     <title>My Business</title>
   </head>
-  
+
   <body>
-    <header id="shocase">
+    <header id="showcase">
       <h1>Welcome to Sticky Situation</h1>
     </header>
     <div id="content" class="container">
-      In the mood for something new and improved to spice up your life. The you 
+In the mood for something new and improved to spice up your life. The you 
       need a little help from the Sticky Situation Squad. With a bit of duct tape
       and some imagenation you can have yourself a new and improved object.
-      We make so many things here. 
+      We make so many things here.</div>
+    <a href="#" class="btn">Learn More</a>
+    <div class="menu-layout">
+      <div class="menu-item">Home</div>
+      <div class="menu-item">Products & Services</div>
+      <div class="menu-item"><a href="contactus.html">Contact Us</a></div>
     </div>
-  </body>
-   <nav> 
-      <a href="index.html">Home</a>
-      <a href="pages/page1.html">Look Book</a>
-      <a href="pages/page2.html"><a href="contactus.html">Contact Us</a>
-    </nav>
-  <body>
-    <div class="column-layout"> 
-    <div class="main-column">
-      <h2>Caught in a Situation</h2>
-      <p>Sticky Situation is a business that is all about bring out the creative 
+
+
+    <div class="column-layout">
+      <div class="main-column">
+        <h2>Caught in a Situation</h2>
+        <p>Sticky Situation is a business that is all about bring out the creative 
       side in people. Sticky Situation has a group of trianed workers that teach 
       you how to build and create artistic peices that fit your personality.</p>
-      <p>This company is to teach and incourage you how to be creative and 
+        <p>This company is to teach and incourage you how to be creative and 
       bring out your inner peace. Sticky Situation is a peaceful and calm space.</p>
-    </div>
-    <div class="sidebar-two">
-      <img src="https://raw.githubusercontent.com/tess521/logo/master/logo.png" style="width:150px;height:100px;" alt="Sticky Situation logo">
-      <p>"Art is where work meets love."</p>
-    </div>
-  </div>
-  
-  <div class="call-outs-container">
-    <div class="call-out">
-      <h4>Feature 1</h4>
-      <p>When you come in for your first consitation you can get 50% off you first art piece.</p>
+      </div>
+
+      <div class="sidebar-two">
+<img src="https://raw.githubusercontent.com/tess521/logo/master/logo.png" style="width:150px;height:100px;" alt="Sticky Situation logo">          <div>
+          <ul>
+            <li>"Art is where work meets love."</li>
+          </ul>
+          </div>
+      </div>
     </div>
 
-    <div class="call-out">
-      <h4>Feature 2</h4>
-      <p>When you come in for your second secton get a free goodie bag.</p>
-    </div>
+<button id="hidebutton" onclick="hideOffers()">Hide Offers</button>
 
-  </div>
+    <div id="specialoffers" class="call-outs-container">
+      <div class="call-out">
+        <h4>Special Offer 1</h4>
+        <p>When you come in for your first consitation you can get 50% off you first art piece</p>
+          <button>Learn More</button>
+      </div>
+
+      <div class="call-out">
+        <h4>Special Offer 2</h4>
+        <p>When you come in for your second secton get a free goodie bag.</p>
+        <button>Learn More</button>
+      </div>
+
+    </div>
+    
+    <script>
+      function hideOffers() {
+        var x = document.getElementById("specialoffers");
+        var y = document.getElementById("hidebutton");
+
+        x.style.display="none";
+        y.style.display="none";
+
+      }
+    </script>
   </body>
+
 </html>
